@@ -33,7 +33,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Cards } from 'princess'
 import { getCardData } from '~/api/princess'
 import PageHeader from '~/components/PageHeader.vue'
 import CardView from '~/components/CardView.vue'
@@ -43,16 +42,16 @@ export default Vue.extend({
     PageHeader,
     CardView
   },
+  data() {
+    return {
+      cardData: [] as princess.Cards,
+      cardNumber: 514
+    }
+  },
   async asyncData() {
     const data = await getCardData(514)
     return {
       cardData: data
-    }
-  },
-  data() {
-    return {
-      cardData: [] as Cards,
-      cardNumber: 514
     }
   },
   methods: {

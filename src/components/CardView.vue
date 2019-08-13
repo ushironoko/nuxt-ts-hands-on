@@ -24,12 +24,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Cards } from 'princess'
 
 export default Vue.extend({
   props: {
     cardData: {
-      type: Array as () => Cards,
+      type: Array as () => princess.Cards,
       required: true
     }
   },
