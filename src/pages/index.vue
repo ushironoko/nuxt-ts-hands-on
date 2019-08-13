@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div>
-      <page-header title="勉強会"></page-header>
-    </div>
+    <nuxt-link to="list">
+      <page-header title="カード詳細"></page-header>
+    </nuxt-link>
     <div>
       <card-view :card-data="cardData"></card-view>
     </div>
@@ -43,10 +43,16 @@ export default Vue.extend({
     PageHeader,
     CardView
   },
+  async asyncData() {
+    const data = await getCardData(514)
+    return {
+      cardData: data
+    }
+  },
   data() {
     return {
       cardData: [] as Cards,
-      cardNumber: 1
+      cardNumber: 514
     }
   },
   methods: {
