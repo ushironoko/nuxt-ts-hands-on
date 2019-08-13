@@ -46,7 +46,7 @@ export default Vue.extend({
   data() {
     return {
       cardData: [] as Cards,
-      cardNumber: 0
+      cardNumber: 1
     }
   },
   methods: {
