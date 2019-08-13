@@ -3,11 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "esnext.asynciterable",
-      "dom"
-    ],
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "allowJs": true,
@@ -17,16 +13,11 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "princess": ["types/princess"],
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
-    "types": [
-      "@types/node",
-      "@nuxt/vue-app"
-    ]
+    "typeRoots": ["types", "node_modules/@types"],
+    "types": ["@types/node", "@nuxt/vue-app"]
   }
 }
