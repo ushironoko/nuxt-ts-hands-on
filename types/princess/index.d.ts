@@ -85,6 +85,7 @@ export type Cards = {
   extraType: number
   costume?: Costume
   bonusCostume?: BonusCostume
+  awakeningText: string
   flavorText: string
   flavorTextAwakened: string
   levelMax: number
@@ -110,7 +111,7 @@ export type Cards = {
   skill?: Skill[]
   skillName: string
   addDate?: Date
-}[]
+}[] | []
 
 export type Schedule = {
   beginDate: Date
