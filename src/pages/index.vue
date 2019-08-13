@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="min-h-screen flex justify-center content-center text-center mx-auto">
     <page-header title="勉強会"></page-header>
   </div>
 </template>
@@ -16,8 +16,4 @@ export default Vue.extend({
 </script>
 
 <style>
-.container {
-  @apply min-h-screen flex justify-center content-center text-center mx-auto;
-  margin-top: 10px;
-}
 </style>

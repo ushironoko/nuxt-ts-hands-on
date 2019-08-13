@@ -14,10 +14,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended'
   ],
-  plugins: [
-    '@typescript-eslint',
-    'prettier'
-  ],
+  plugins: ['prettier', '@typescript-eslint'],
   // add your custom rules here
   rules: {
     '@typescript-eslint/no-unused-vars': 'error'
